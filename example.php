@@ -1,6 +1,6 @@
 <?php
 
-// $Id: example.php,v 1.2 2002/10/17 10:44:40 rossigee Exp $
+// $Id: example.php,v 1.3 2002/12/16 12:18:42 rossigee Exp $
 
 include("main.whois");
 
@@ -12,7 +12,7 @@ $whois = new Whois($domain);
 $result = $whois->Lookup();
 
 echo "<form method=\"post\" action=\"example.php\">";
-echo "<input name=\"domain\"/>";
+echo "<input name=\"domain\" value=\"".$domain."\"/>";
 echo "<input type=\"submit\"/>";
 echo "</form>";
 
