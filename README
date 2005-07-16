@@ -1,5 +1,5 @@
 
-$Id: README,v 1.5 2004/04/22 17:45:41 sparc Exp $
+$Id: README,v 1.6 2005/07/16 15:32:07 sparc Exp $
 
 Introduction
 ------------
@@ -32,7 +32,7 @@ Example usage
 
 (see example.php)
 
-include("main.whois");
+include("whois.main.php");
 
 $whois = new Whois("example.com");
 $result = $whois->Lookup();

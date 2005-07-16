@@ -1,10 +1,10 @@
 <?php
 
-// $Id: example.php,v 1.3 2002/12/16 12:18:42 rossigee Exp $
+// $Id: example.php,v 1.4 2005/07/16 15:32:07 sparc Exp $
 
-include("main.whois");
+include('whois.main.php');
 
-$domain = "example.com";
+$domain = 'example.com';
 if(isset($_REQUEST['domain'])) {
 	$domain = $_REQUEST['domain'];
 }
