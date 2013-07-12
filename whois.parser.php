@@ -768,6 +768,11 @@ return $res;
 
 function get_date($date,$format)
 {
+
+if(strtotime($date) > 0) {
+	return date('Y-m-d', strtotime($date));
+}
+
 $months = array( 'jan'=>1,  'ene'=>1,  'feb'=>2,  'mar'=>3, 'apr'=>4, 'abr'=>4,
                  'may'=>5,  'jun'=>6,  'jul'=>7,  'aug'=>8, 'ago'=>8, 'sep'=>9,
                  'oct'=>10, 'nov'=>11, 'dec'=>12, 'dic'=>12 );
