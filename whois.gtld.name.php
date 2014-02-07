@@ -41,8 +41,8 @@ class name_handler
                 'billing' => 'BILLING CONTACT INFO',
                 'domain.name' => 'Domain Name:',
                 'domain.sponsor' => 'Registrar',
-                'domain.created' => 'Creation Date',
-                'domain.expires' => 'Expiration Date'
+                'domain.created' => 'Creation Date:',
+                'domain.expires' => 'Expiration Date:'
 		            );
 
 		$extra = array(
