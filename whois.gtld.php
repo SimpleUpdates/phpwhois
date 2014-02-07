@@ -54,7 +54,7 @@ class gtld_handler extends WhoisClient
 	function parse($data, $query)
 		{
 		$this->Query = array();
-		if ( array_key_exists( 'handler', $query ) )
+		if ( is_array( $query ) and array_key_exists( 'handler', $query ) )
 			{
 				$this->SUBVERSION = sprintf('%s-%s', $query['handler'], $this->HANDLER_VERSION);
 			}
